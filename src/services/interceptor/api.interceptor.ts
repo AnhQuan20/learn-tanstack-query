@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 const axiosHttp = axios.create({
-  baseURL: `https://jsonplaceholder.typicode.com`,
+  baseURL: import.meta.env.VITE_DATABASE_URL,
   withCredentials: false,
 });
 
